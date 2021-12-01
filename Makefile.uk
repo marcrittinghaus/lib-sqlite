@@ -45,7 +45,7 @@ $(eval $(call addlib_s,libsqlite,$(CONFIG_LIBSQLITE)))
 ################################################################################
 # Sources
 ################################################################################
-LIBSQLITE_VERSION = 3360000
+LIBSQLITE_VERSION = 3370000
 LIBSQLITE_BASENAME = sqlite-autoconf-$(LIBSQLITE_VERSION)
 LIBSQLITE_URL = https://www.sqlite.org/2021/$(LIBSQLITE_BASENAME).tar.gz
 LIBSQLITE_PATCHDIR = $(LIBSQLITE_BASE)/patches
