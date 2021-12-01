@@ -40,7 +40,7 @@
 ################################################################################
 # App registration
 ################################################################################
-$(eval $(call addlib,libsqlite))
+$(eval $(call addlib_s,libsqlite,$(CONFIG_LIBSQLITE)))
 
 ################################################################################
 # Sources
@@ -67,7 +67,6 @@ CINCLUDES-$(CONFIG_LIBSQLITE) += -I$(LIBSQLITE_SRC)
 # Global flags
 ################################################################################
 LIBSQLITE_FLAGS += -D_HAVE_SQLITE_CONFIG_H
-LIBSQLITE_FLAGS += -DSQLITE_OMIT_LOAD_EXTENSION
 
 # Suppress some warnings to make the build process look neater
 LIBSQLITE_SUPPRESS_FLAGS += -Wno-unused-parameter
