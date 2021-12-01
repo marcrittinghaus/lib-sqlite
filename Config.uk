@@ -1,7 +1,6 @@
 menuconfig LIBSQLITE
     bool "SQLite"
     default y
-    select LIBUKMMAP
     select LIBPOSIX_SYSINFO
     select LIBNEWLIBC
     select LIBPTHREAD_EMBEDDED
